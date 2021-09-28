@@ -13,19 +13,11 @@ class APIService {
     var urlSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
     
-    private func getURL (path: String ) -> String? {
-        var urlComponents = URLComponents()
-        urlComponents.scheme = scheme
-        urlComponents.host = host
-        urlComponents.path = path
-        return urlComponents.url?.absoluteString
-    }
-    
     func fetchImages(completion: @escaping (Result<[Image], Error>) -> Void) {
         
         dataTask?.cancel()
         
-        if let currentURL = URL(string: getURL(path: pathGallery) ?? defaultURLString) {
+        if let currentURL = URL(string: defaultURLString) {
             print(currentURL)
             dataTask = urlSession.dataTask(with: currentURL) { [weak self] data, response, error in
                 defer {

@@ -35,7 +35,6 @@ class MainViewController: UIViewController {
         galleryCollectionView.delegate = self
         galleryCollectionView.dataSource = self
         gallerySearchBar.delegate = self
-        gallerySearchBar.delegate = self
         fetchImages()
         addLongClick()
         refreshControl.addTarget(self, action: #selector(handleTopRefresh(_:)), for: .valueChanged )

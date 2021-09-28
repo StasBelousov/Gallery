@@ -112,7 +112,6 @@
         <!--Photo Comment View Controller-->
         <scene sceneID="PqA-EG-U02">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OcC-X5-rNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="PhotoCommentViewController" id="ktg-Vj-E7g" customClass="PhotoCommentViewController" customModule="XIAG_gallery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o7w-tF-F82">
                         <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
@@ -191,6 +190,7 @@
                         <segue destination="1nC-fj-P4W" kind="show" identifier="zooming" id="KsY-LF-MwA"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OcC-X5-rNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="0bt-wh-Fec">
                     <connections>
                         <action selector="openZoomingController:" destination="ktg-Vj-E7g" id="geH-mk-owT"/>
@@ -220,7 +220,7 @@
         <!--Zoomed Photo View Controller-->
         <scene sceneID="x9M-cD-WSL">
             <objects>
-                <viewController storyboardIdentifier="PhotoViewController" id="1nC-fj-P4W" customClass="ZoomedPhotoViewController" customModule="PhotoScroll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoViewController" id="1nC-fj-P4W" customClass="ZoomedPhotoViewController" customModule="XIAG_gallery" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="05a-sG-Gg4"/>
                         <viewControllerLayoutGuide type="bottom" id="grS-Ls-sph"/>
